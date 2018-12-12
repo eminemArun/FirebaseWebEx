@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Teas</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Tea name">
+                <input type="text" name="desc" placeholder="Description of tea">
+                 <input type="text" name="weblink" placeholder="type your web link">
+                <button>Add Tea</button>
+            </form>
+
+            <ul id="tea-list"></ul>
+
+        </div>
+
+        <script>
+            // Initialize Firebase
+                var config = {
+    apiKey: "AIzaSyA1LKkyH9AkjpQDBPXYiWxHn2NLYHPmF3I",
+    authDomain: "teamaker-5620a.firebaseapp.com",
+    databaseURL: "https://teamaker-5620a.firebaseio.com",
+    projectId: "teamaker-5620a",
+    storageBucket: "teamaker-5620a.appspot.com",
+    messagingSenderId: "299237188521"
+  };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
