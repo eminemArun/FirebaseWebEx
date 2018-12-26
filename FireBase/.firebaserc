@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "teamaker-5620a"
+  },
+  "targets": {
+    "teamaker-5620a": {
+      "hosting": {
+        "tea": [
+          "https://teamaker-5620a.firebaseapp.com/"
+        ]
+      }
+    }
   }
 }

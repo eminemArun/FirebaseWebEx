@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "tea",
+    "public": "contactUs",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -12,9 +12,5 @@
         "destination": "/index.html"
       }
     ]
-  },
-  "firestore": {
-    "rules": "rules",
-    "indexes": "firestore.indexes.json"
   }
 }
